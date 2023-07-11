@@ -11,7 +11,7 @@ import SwiftUI
 struct Mutuals_App: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
