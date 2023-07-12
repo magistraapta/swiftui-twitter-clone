@@ -11,20 +11,39 @@ extension SideMenu{
     var sideMenuNavigation: some View {
         VStack(alignment:.leading, spacing: 32){
             ForEach(SideMenuViewModel.allCases, id: \.rawValue){ item in
-                HStack(spacing: 12){
-                    Image(systemName: item.imagName)
-                    Text(item.title)
-                    Spacer()
+                if item == .Profile{
+                    NavigationLink {
+                        ProfileView()
+                    } label: {
+                        SideMenuOption(viewModel: item)
+                    }
+                } else if item == .List{
+                    NavigationLink {
+                        ProfileView()
+                    } label: {
+                        SideMenuOption(viewModel: item)
+                    }
+                } else if item == .Bookmark{
+                    NavigationLink {
+                        ProfileView()
+                    } label: {
+                        SideMenuOption(viewModel: item)
+                    }
+                } else if item == .Logout {
+                    NavigationLink {
+                        ProfileView()
+                    } label: {
+                        SideMenuOption(viewModel: item)
+                    }
                 }
             }
-            
         }
     }
 }
 
 struct SideMenu: View {
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading,spacing: 32) {
             VStack(alignment: .leading){
                 Circle()
                     .frame(width: 48)
