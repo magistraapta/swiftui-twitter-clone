@@ -23,6 +23,7 @@
 		3EAA33802A5D5BF400684D8C /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA337F2A5D5BF400684D8C /* NotificationView.swift */; };
 		3EAA33822A5D5C0200684D8C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA33812A5D5C0200684D8C /* MessageView.swift */; };
 		3EAA33842A5D5E9100684D8C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA33832A5D5E9100684D8C /* ProfileView.swift */; };
+		3EAD314A2A5EC204002A2F29 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD31492A5EC204002A2F29 /* SideMenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		3EAA337F2A5D5BF400684D8C /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		3EAA33812A5D5C0200684D8C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		3EAA33832A5D5E9100684D8C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		3EAD31492A5EC204002A2F29 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		3E03E82E2A5DA1CD00BC4FF2 /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
+				3EAD31492A5EC204002A2F29 /* SideMenuViewModel.swift */,
 			);
 			path = viewModel;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				3EAA33712A5D56FA00684D8C /* TweetRow.swift in Sources */,
 				3E03E8282A5D732F00BC4FF2 /* FilterViewModel.swift in Sources */,
 				3E38EAE62A5981FD00408BB0 /* Mutuals_App.swift in Sources */,
+				3EAD314A2A5EC204002A2F29 /* SideMenuViewModel.swift in Sources */,
 				3EAA33782A5D5BA300684D8C /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

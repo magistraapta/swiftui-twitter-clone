@@ -9,66 +9,41 @@ import SwiftUI
 
 extension SideMenu{
     var sideMenuNavigation: some View {
-        VStack(spacing: 24){
-            Button {
-                //some action
-            } label: {
-                HStack(spacing: 16){
-                    Image(systemName: "person")
-                    Text("Profile")
-                        .bold()
+        VStack(alignment:.leading, spacing: 32){
+            ForEach(SideMenuViewModel.allCases, id: \.rawValue){ item in
+                HStack(spacing: 12){
+                    Image(systemName: item.imagName)
+                    Text(item.title)
+                    Spacer()
                 }
             }
-            Button {
-                //some action
-            } label: {
-                HStack(spacing: 16){
-                    Image(systemName: "list.bullet")
-                    Text("Profile")
-                        .bold()
-                }
-            }
-            Button {
-                //some action
-            } label: {
-                HStack(spacing: 16){
-                    Image(systemName: "bookmark")
-                    Text("Profile")
-                        .bold()
-                }
-            }
-            Button {
-                //some action
-            } label: {
-                HStack(spacing: 16){
-                    Image(systemName: "logout")
-                    Text("Profile")
-                        .bold()
-                }
-            }
-
+            
         }
-        .foregroundColor(.black)
     }
 }
 
 struct SideMenu: View {
     var body: some View {
-        VStack(alignment: .leading){
-            Circle()
-                .frame(width: 48)
-            VStack(alignment: .leading, spacing: 4){
-                Text("Magistra")
-                    .font(.title2).bold()
-                Text("@magistraapta")
-                    .font(.subheadline)
-                    .foregroundColor(.secondary)
+        VStack(alignment: .leading) {
+            VStack(alignment: .leading){
+                Circle()
+                    .frame(width: 48)
+                VStack(alignment: .leading, spacing: 4){
+                    Text("Magistra")
+                        .font(.title2).bold()
+                    Text("@magistraapta")
+                        .font(.subheadline)
+                        .foregroundColor(.secondary)
+                }
+                UserStatsView()
+                    .padding(.vertical)
             }
-            
-            UserStatsView()
-                .padding(.vertical)
+            .padding(.leading)
             
             sideMenuNavigation
+                .padding(.horizontal)
+            
+            Spacer()
         }
     }
 }
