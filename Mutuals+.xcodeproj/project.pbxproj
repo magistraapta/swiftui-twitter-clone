@@ -25,6 +25,8 @@
 		3EAA33822A5D5C0200684D8C /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA33812A5D5C0200684D8C /* MessageView.swift */; };
 		3EAA33842A5D5E9100684D8C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAA33832A5D5E9100684D8C /* ProfileView.swift */; };
 		3EAD314A2A5EC204002A2F29 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EAD31492A5EC204002A2F29 /* SideMenuViewModel.swift */; };
+		3EE5C7802A5FCE8D00CE536F /* ShowNewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5C77F2A5FCE8D00CE536F /* ShowNewTweetView.swift */; };
+		3EE5C7822A5FD34D00CE536F /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE5C7812A5FD34D00CE536F /* TextArea.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		3EAA33812A5D5C0200684D8C /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		3EAA33832A5D5E9100684D8C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		3EAD31492A5EC204002A2F29 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		3EE5C77F2A5FCE8D00CE536F /* ShowNewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowNewTweetView.swift; sourceTree = "<group>"; };
+		3EE5C7812A5FD34D00CE536F /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +186,7 @@
 				3EAA33702A5D56FA00684D8C /* TweetRow.swift */,
 				3E03E82B2A5D7AAB00BC4FF2 /* UserRow.swift */,
 				3E03E8322A5DA38F00BC4FF2 /* UserStatsView.swift */,
+				3EE5C7812A5FD34D00CE536F /* TextArea.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				3EAA33742A5D58EF00684D8C /* FeedView.swift */,
+				3EE5C77F2A5FCE8D00CE536F /* ShowNewTweetView.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -313,6 +319,8 @@
 				3EAA33842A5D5E9100684D8C /* ProfileView.swift in Sources */,
 				3E03E82C2A5D7AAB00BC4FF2 /* UserRow.swift in Sources */,
 				3E38EAE82A5981FD00408BB0 /* ContentView.swift in Sources */,
+				3EE5C7802A5FCE8D00CE536F /* ShowNewTweetView.swift in Sources */,
+				3EE5C7822A5FD34D00CE536F /* TextArea.swift in Sources */,
 				3EAA33822A5D5C0200684D8C /* MessageView.swift in Sources */,
 				3EAA33802A5D5BF400684D8C /* NotificationView.swift in Sources */,
 				3E03E8332A5DA38F00BC4FF2 /* UserStatsView.swift in Sources */,
